@@ -1,8 +1,8 @@
 ﻿# Описание задачи
-Для типа «односвязанный неизменяемый список», определенного как
-  Class ListNode<T> {
-      Public readonly T Value;
-      Public readonly ListNode<T> Next;
-      …
-  }
+Для типа «односвязанный неизменяемый список», определенного как </p>
+  Class ListNode<T> {</p>
+      Public readonly T Value;</p>
+      Public readonly ListNode<T> Next;</p>
+      …</p>
+  }</p>
 Написать две функции: замены элемента в списке и объединения двух списков.
