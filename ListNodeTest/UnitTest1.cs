@@ -40,7 +40,7 @@ namespace myList
         public readonly T Value;
         public readonly ListNode<T> Next;
 
-        public ListNode()
+        public ListNode(T value) : this(value, null)
         {
         }
 
@@ -68,7 +68,7 @@ namespace myList
         public static ListNode<int> CreateIntListNode(int start, int end)
         {
             int i = start;
-            ListNode<int> list = new ListNode<int>(i, null);
+            ListNode<int> list = new ListNode<int>(i);
             for (; i < end;)
             {
                 ++i;
@@ -104,7 +104,7 @@ namespace myList
             else if (list2 == null)
                 return list1;
 
-            ListNode<T> newlist = new ListNode<T>(list1.Value, null);
+            ListNode<T> newlist = new ListNode<T>(list1.Value);
             while (list1.Next != null)
             {
                 list1 = list1.Next;
@@ -130,7 +130,7 @@ namespace myList
         {
             int count = 0;
             ListNode<T> newList = list;
-            list = new ListNode<T>(index == 0 ? newvalue : list.Value, null);
+            list = new ListNode<T>(index == 0 ? newvalue : list.Value);
             while (newList.Next != null)
             {
                 count++;
